@@ -386,6 +386,54 @@ nav a:hover {
     font-size: 1.1rem;
 }
 
+/* 名片样式 */
+.business-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 500px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.card-content {
+    text-align: center;
+}
+
+.card-name {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 30px rgba(79, 70, 229, 0.3);
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.2rem;
+}
+
+.info-item i {
+    color: var(--accent-color);
+    font-size: 1.4rem;
+}
+
 /* 响应式设计 */
 @media (max-width: 768px) {
     .nav-bar {
@@ -420,6 +468,19 @@ nav a:hover {
 
     .contact-item {
         padding: 20px;
+    }
+
+    .business-card {
+        padding: 30px;
+        margin: 0 20px;
+    }
+
+    .card-name {
+        font-size: 2rem;
+    }
+
+    .info-item {
+        font-size: 1rem;
     }
 }
 
